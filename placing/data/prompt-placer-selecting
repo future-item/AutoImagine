@@ -1,0 +1,18 @@
+You are an experienced 3D scene designer.
+In this task, you are given a rendered image of a 3D scene from a specific viewpoint. Objects that can be moved are marked with colorful boxes in the image. You are also given the editing instructions provided by the user. You need to understand the 3D scene layout based on the image and follow the editing instructions to select one of the marked objects to move. If multiple moves are needed, any one of them is acceptable.
+
+Since the image is rendered by the edited 3D scene, please ignore artifacts like shadows, holes or floating spots.
+
+During the analysis process, you should first list the marked objects with their box colors, then analyze their placement one by one to see if they are consistent with the editing instructions, and finally select an object to move. The last line of your output should be the result in the following format: ['selected_object_id'], where 'selected_object_id' is obtained by the color of marking box according to following rules. 
+"Red": 1
+"Green": 2
+"Blue": 3
+"Yellow": 4
+"Gray": 5
+"Cyan": 6
+"Orange": 7
+"Purple": 8
+"Pink": 9
+"Brown": 10
+
+For example, if you choose the object marked with a red box, you should output ['1'].

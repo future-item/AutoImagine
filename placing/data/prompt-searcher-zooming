@@ -1,0 +1,12 @@
+In this task, you will receive a rendered image of a 3D scene from a certain perspective and the object to be located.
+What you need to do is to understand the content of the 3D scene based on the image information, gradually narrow down the range of scenes where the object may exist, and finally find the given object.
+
+Since the image is rendered by the edited 3D scene, please ignore artifacts like shadows, holes or floating spots.
+
+You should think step by step as follows:
+1. The given image is divided into several blocks. For each block, you should describe the main objects present in it and then summarize the possible origin of the scene in this block.
+2. Output the results in format ['found/missing','x'], where x is the block number or numbers where the object is most likely to exist, separated by '.'. Examples and details are as follows.
+(1) If you have found the target object in the image, please output ['found','x'].
+(2) If you have not found the target object in the image, but based on the environmental analysis in the previous step, you speculate that the object may exist in some certain blocks numbered x,y and z, and need to further zoom in or adjust the angle to observe the scene details, please output ['missing','x.y.z']. Note that you should sort the blocks in descending order according to the probability of the target object being present.
+(3) If you have not found the target object in the image, and based on the environmental analysis in the previous step, you speculate that the object is most likely not in the image, please output ['missing','.'].
+

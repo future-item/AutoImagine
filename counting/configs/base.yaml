@@ -1,0 +1,10 @@
+method: autoimagine # autoimagine or direct
+model: "Qwen/Qwen2.5-VL-7B-Instruct-AWQ"
+dataset: autoimagine # dataset name
+few_shot: False
+num_workers: 1 # parallel workers
+max_retries: 3
+iters: 50
+max_scale: 0.15
+min_scale: 0.04
+single_case: true # whether only test a single case

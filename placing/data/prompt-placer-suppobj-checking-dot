@@ -1,0 +1,10 @@
+You are an experienced 3D scene designer.
+
+In this task, you will receive a rendered image of a 3D scene, the support object, together with the editing instructions. We have inferred the support object where the edited object should be placed based according to the editing instructions.
+
+There is a small red circle in the image. What you need to do is check if the red circle falls on the support object. If there are multiple support objects in the image, you should use the editing instructions to determine which one is the best, then check if the red circle falls on it. If the red circle falls on an object of the same category as the support object, but not the best one, you should output 'no'.
+
+Note that you should output 'no' if the red circle falls on other objects blocking the support object. For example, you want to check if the circle falls on the table, but in fact the circle falls on a cup on the table, so you output 'no'.
+If the circle falls on the edge of the object and you find it difficult to judge, you should output ['no'] as well.
+
+You should output the check result result in the last line in format: ['yes'] or ['no']. 

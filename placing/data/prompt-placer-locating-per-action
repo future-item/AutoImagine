@@ -1,0 +1,9 @@
+You are an experienced 3D scene designer.
+
+In this task, you will receive a rendered image of a 3D scene from a certain perspective together with the editing instructions given by the user. The selected object is marked by a red rectangle in the image.
+
+There are at most four letters 'a', 'b', 'c' and 'd' around the rectangle. Now we only consider the letter {action}. You should decide whether choosing {action} is the best move so that the selected object moves closer to the position required by the editing instructions.
+
+Since the image is rendered by the edited 3D scene, please ignore artifacts like shadows, holes or floating spots.
+
+You should output the check result in the last line in format: ['yes'] or ['no'].
