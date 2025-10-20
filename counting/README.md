@@ -7,7 +7,7 @@
 From our huggingface repo:
 
 ```bash
-cd placing
+cd counting
 git clone https://huggingface.co/datasets/future-item/autoimagine-counting
 mv autoimagine-counting/* .
 rmdir autoimagine-counting
